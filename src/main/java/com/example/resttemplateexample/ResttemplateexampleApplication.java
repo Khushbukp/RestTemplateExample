@@ -14,7 +14,7 @@ public class ResttemplateexampleApplication {
 
         RestTemplate resttemplate= new RestTemplate();
 
-//        ResponseEntity is meant to represent the entire HTTP response.
+//        Notes: ResponseEntity is meant to represent the entire HTTP response.
 //        You can control anything that goes into it: status code, headers, and body
 
         ResponseEntity<String> response= resttemplate.getForEntity("http://localhost:8080/getAllEmployee",String.class);
