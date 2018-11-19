@@ -28,6 +28,17 @@ public class ResttemplateexampleApplication {
         MediaType contentType1 = response.getHeaders().getContentType();
         HttpStatus statusCode1 = response.getStatusCode();
 
+//        ResponseEntity<String> responseEntity= resttemplate.getForEntity("http://localhost:9090/addEmployee",String.class);
+//        String entity2= responseEntity.getBody();
+//        MediaType contentType2= responseEntity.getHeaders().getContentType();
+//        HttpStatus status = responseEntity.getStatusCode();
+
+        //deleteEmployee
+        ResponseEntity<String> response2 = resttemplate.getForEntity("http://localhost:8080/deleteEmployee",String.class);
+        String entity2=response1.getBody();
+        MediaType contentType2 = response.getHeaders().getContentType();
+        HttpStatus statusCode2 = response.getStatusCode();
+
 
 
     }
